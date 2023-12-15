@@ -1,5 +1,5 @@
 <div id="<%= dom_id idea %>">
-  <p>
+  <p class="idea-name">
     <strong>Name:</strong>
     <%= idea.name %>
   </p>
@@ -11,7 +11,7 @@
 
   <p>
     <strong>Picture:</strong>
-    <%= idea.picture %>
+    <%= image_tag(idea.picture_url, width: 600) if idea.picture? %>
   </p>
 
 </div>
